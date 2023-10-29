@@ -1,0 +1,179 @@
+.service_block {
+    background-color: #1D1F2A;
+    padding: 50px 50px;
+
+    h4 {
+        font-weight: 900 !important;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        color: #F4F4F4;
+    }
+
+    .service_block_slide {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            width: 350px;
+            height: 350px;
+        }
+
+        .service_block_slide_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            h5 {
+                line-height: 64px;
+                letter-spacing: 0.04em;
+                font-size: 50px;
+                color: #1D1F2A;
+                text-transform: uppercase;
+                font-style: italic;
+                font-weight: 900 !important;
+                -webkit-text-stroke: 1px #F4F4F4;
+            }
+
+            button {
+                z-index: 8;
+                display: block;
+                position: relative;
+                width: max-content;
+                max-width: 250px;
+                padding: 8px 20px;
+                background: #1D1F2A;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.005em;
+                color: #F4F4F4;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #EE2737;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .service_block_slider {
+        z-index: -1;
+
+        .service_block_slider_img {
+            position: relative;
+
+            .service_block_slider_img_first {
+                position: absolute;
+                right: 74px;
+                top: 38px;
+
+                img {
+                    opacity: 0.5;
+                }
+            }
+
+            .service_block_slider_img_second {
+                position: absolute;
+                left: 50%;
+                top: 200px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 830px) {
+    .service_block {
+        .service_block_slide {
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            .service_block_slide_text{
+                h5 {
+                    font-size: 50px;
+                }
+                button{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .service_block {
+        padding: 0 20px;
+        .service_block_slide {
+            .service_block_slide_text{
+                h5 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .service_block {
+        .service_block_slide {
+            .service_block_slide_text{
+                h5 {
+                    font-size: 30px;
+                }
+                button{
+                    font-size: 10px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .service_block{
+        padding: 10px 50px;
+        .service_block_slide {
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            .service_block_slide_text{
+                h5 {
+                    font-size: 20px;
+                }
+                button{
+                    font-size: 8px;
+                padding: 6px 7px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 410px) {
+    .service_block {
+        .service_block_slide {
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            .service_block_slide_text{
+                h5 {
+                    font-size: 20px;
+                }
+                button{
+                    font-size: 8px;
+                padding: 6px 7px;
+                }
+            }
+        }
+    }
+}

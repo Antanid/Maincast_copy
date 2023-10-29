@@ -1,0 +1,321 @@
+    .esportsCompanies {
+        background-color: #1D1F2A;
+        padding: 50px 0;
+
+        .esportsCompanies_imgText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../../../assets/img/esports/bgImg.png) no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+
+            .esportsCompanies_cableImg {
+                background: url(../../../assets/img/esports/cable.png) no-repeat;
+                background-size: 100% 100%;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .esportsCompanies_imgText_imgBlock {
+                z-index: 2;
+
+                img {
+                    width: 580px;
+                }
+
+            }
+
+            .esportsCompanies_imgText_textBlock {
+                margin-left: 50px;
+                z-index: 2;
+
+                .esportsCompanies_imgText_textBlock_h3 {
+                    width: 400px;
+                    font-size: 60px;
+                    font-weight: 900;
+                    font-style: italic;
+                    color: #fff;
+
+                    span {
+                        font-style: italic;
+                        font-weight: 900;
+                        color: #F4252D;
+                    }
+                }
+
+                .esportsCompanies_imgText_textBlock_online {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    margin-left: 150px;
+
+                    .esportsCompanies_imgText_textBlock_online_procent {
+                        font-size: 65px;
+                        line-height: 101px;
+                        text-align: right;
+                        letter-spacing: 0.005em;
+                        text-transform: uppercase;
+                        color: transparent;
+                        -webkit-text-stroke: 2px #EE2737;
+                        margin-right: 30px;
+                        font-weight: bold;
+
+                    }
+
+                    .esportsCompanies_imgText_textBlock_online_text {
+                        font-style: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: #B8B8BD;
+
+                    }
+
+                }
+
+                .esportsCompanies_imgText_textBlock_numberOne {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+
+                    .esportsCompanies_imgText_textBlock_online_procent {
+                        font-size: 65px;
+                        line-height: 101px;
+                        text-align: right;
+                        letter-spacing: 0.005em;
+                        text-transform: uppercase;
+                        color: transparent;
+                        -webkit-text-stroke: 2px #EE2737;
+                        margin-right: 30px;
+                        font-weight: bold;
+                    }
+
+                    .esportsCompanies_imgText_textBlock_online_text {
+                        font-style: normal;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: #B8B8BD;
+                    }
+                }
+
+            }
+
+        }
+
+        .esportsCompanies_views {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            z-index: 2;
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style-type: none;
+                    width: 250px;
+                    text-align: center;
+
+                    .esportsCompanies_views_num {
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 51px;
+                        letter-spacing: 0.005em;
+                        color: #B8B8BD;
+                    }
+
+                    .esportsCompanies_views_line {
+                        height: 1px;
+                        width: 100px;
+                        background: #EE2737;
+                        margin: 20px auto;
+                    }
+
+                    .esportsCompanies_views_text {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        color: #B8B8BD;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+                .esportsCompanies_imgText_textBlock {
+                    .esportsCompanies_imgText_textBlock_h3 {
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+                .esportsCompanies_imgText_textBlock {
+                    .esportsCompanies_imgText_textBlock_h3 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .esportsCompanies_imgText_textBlock {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+                .esportsCompanies_imgText_imgBlock {
+                    img {
+                        width: 400px;
+                    }
+
+                }
+
+            }
+
+            .esportsCompanies_views {
+                ul {
+                    li {
+                        width: 200px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+                .esportsCompanies_imgText_imgBlock {
+                    img {
+                        width: 300px;
+                    }
+
+                }
+
+            }
+
+            .esportsCompanies_views {
+                ul {
+                    li {
+                        width: 150px;
+
+                        .esportsCompanies_views_num {
+                            font-size: 30px;
+                        }
+
+                        .esportsCompanies_views_text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 550px) {
+        .esportsCompanies {
+            .esportsCompanies_imgText {
+
+                .esportsCompanies_imgText_textBlock {
+                    .esportsCompanies_imgText_textBlock_h3 {
+                        font-size: 30px;
+                    }
+
+                    .esportsCompanies_imgText_textBlock_online {
+                        width: 100%;
+                        padding: 10px 0;
+                        margin-left: 0;
+                    }
+
+                    .esportsCompanies_imgText_textBlock_numberOne {
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+            .esportsCompanies_views {
+                justify-content: center;
+                align-items: center;
+                padding-right: 0;
+
+                ul {
+                    align-items: start;
+
+                    li {
+                        width: 90px;
+                        padding: 10px;
+
+                        .esportsCompanies_views_num {
+                            font-size: 25px;
+                        }
+
+                        .esportsCompanies_views_text {
+                            font-size: 12px;
+                        }
+
+                        .esportsCompanies_views_line {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .esportsCompanies {
+        .esportsCompanies_imgText{
+            .esportsCompanies_cableImg{
+                display: none;
+            }
+            .esportsCompanies_imgText_textBlock{
+                margin-left: 10px;
+                display: contents;
+                .esportsCompanies_imgText_textBlock_online{
+                    .esportsCompanies_imgText_textBlock_online_procent{
+                        font-size: 40px;
+                    }
+                }
+                .esportsCompanies_imgText_textBlock_numberOne{
+                    .esportsCompanies_imgText_textBlock_online_procent{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        }
+    }

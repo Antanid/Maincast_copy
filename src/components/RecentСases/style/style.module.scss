@@ -1,0 +1,132 @@
+.recentCases_block {
+    background-color: #1D1F2A;
+    padding: 60px 50px;
+    height: 100%;
+
+    .recentCases_block_h4 {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 25px;
+            line-height: 36px;
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #F4F4F4;
+            font-weight: 900;
+        }
+    }
+
+.recentCases_block_All_content{
+    margin-top: 50px;
+    display: flex;
+    overflow: auto;
+    .recentCases_block_content {
+        height: 100%;
+        width: 580px;
+margin-left: 30px;
+        img {
+            width: 580px;
+            height: 320px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            text-transform: uppercase;
+            color: #F4F4F4;
+            height: 80px;
+            max-height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .recentCases_block_content_data {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.005em;
+                color: #75787B;
+            }
+
+            .recentCases_block_content_data_news {
+                border-right: 1px solid #75787B;
+                border-top: 1px solid #75787B;
+                border-bottom: 1px solid #75787B;
+                border-left: transparent;
+                height: 20px;
+                padding: 3px;
+                position: relative;
+
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.005em;
+                    color: #75787B;
+                    text-align: center;
+                    margin-right: 5px;
+                }
+
+                .recentCases_block_content_data_news_triangle {
+                    position: absolute;
+                    transform: rotate(225deg);
+                    width: 19px;
+                    height: 19px;
+                    border-right: 1px solid #75787B;
+                    border-top: 1px solid #75787B;
+                    top: 3px;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
+    
+}
+
+@media (max-width: 680px) {
+    .recentCases_block{
+        padding: 60px 20px;
+        .recentCases_block_All_content{
+.recentCases_block_content{
+    width: 420px;
+    height: 100%;
+    img{
+        width: 420px;
+    }
+    .recentCases_block_content_data{
+        margin-top: 40px;
+    }
+}
+        }
+    }
+}
+@media (max-width: 500px) {
+    .recentCases_block{
+        padding: 60px 20px;
+        .recentCases_block_h4 {
+            h4{
+                font-size: 23px;
+            }
+        }
+        .recentCases_block_All_content{
+.recentCases_block_content{
+    width: 320px;
+    height: 100%;
+    img{
+        width: 320px;
+    }
+    .recentCases_block_content_data{
+        padding-top: 40px;
+    }
+}
+        }
+    }
+}

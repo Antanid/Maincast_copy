@@ -1,0 +1,182 @@
+.future_events {
+    background-color: #1D1F2A;
+    padding: 0 50px;
+    padding-top: 100px;
+    
+
+    .future_events_firstText {
+        font-size: 25px;
+        line-height: 36px;
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        color: #F4F4F4;
+        font-weight: 900;
+        padding-bottom: 50px;
+    }
+
+    .future_events_sort {
+        margin-bottom: 20px;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin-bottom: 20px;
+                    opacity: 0.3;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    letter-spacing: 0.005em;
+                    color: #fff;
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    p {
+                        color: #EE2737;
+                        transition: color 0.3s ease;
+                    }
+                }
+            }
+
+            .future_events_sort_li {
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin-bottom: 20px;
+                    color: red;
+                    opacity: 1;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    letter-spacing: 0.005em;
+                    color: #EE2737;
+                }
+
+            }
+        }
+    }
+
+    .future_events_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     padding-bottom: 80px;
+     min-height: 500px;
+        
+        .future_events_block_main {
+            height: 150px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 1px 0;
+            border-bottom: 1px solid transparent;
+            width: 100%;
+            
+            img {
+                width: 140px;
+            }
+
+            .future_events_block_main_text {
+                width: 330px;
+
+                h4 {
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: inherit;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.005em;
+                    opacity: 0.7;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.005em;
+                    color: #B8B8BD;
+                    margin-top: 16px;
+                    opacity: 0.5;
+                }
+            }
+            &:hover{
+                border-bottom: 2px solid red;
+                transition: all 0.3s ease;
+                h4{
+                    opacity: 1;
+                    transition: all 0.3s ease;
+                }
+                p{
+                    opacity: 1;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .future_events {
+        padding: 30px 20px;
+        .future_events_block{
+            .future_events_block_main{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 450px) {
+    .future_events {
+        .future_events_block{
+            .future_events_block_main{
+                img{
+                    width: 70px;
+                }
+                .future_events_block_main_text {
+                    text-align: center;
+                    h4{
+                        font-size: 19px;
+                        color: #fff;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }   
+}
